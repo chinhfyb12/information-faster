@@ -1,0 +1,1 @@
+Extension see user's information on facebook faster

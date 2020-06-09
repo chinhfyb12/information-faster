@@ -1,0 +1,16 @@
+{
+  "prompt_for_name": {
+    "message": "Information faster (Beta)",
+    "description": "See user's information faster"
+  },
+  "hello": {
+    "message": "Information faster",
+    "description": "See user's information faster",
+    "placeholders": {
+      "user": {
+        "content": "Information faster",
+        "example": "Information faster"
+      }
+    }
+  }
+}

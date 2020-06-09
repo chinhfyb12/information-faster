@@ -1,0 +1,49 @@
+{
+  "name": "Information faster (Beta)",
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "description": "See user's information faster",
+  "icons": {
+    "16": "./find.png",
+    "128": "./find.png"
+  },
+  "default_locale": "vi",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "19": "./find.png",
+      "38": "./find.png"
+    },
+    "default_title": "See user's information faster"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "style.css",
+    "index.js"
+  ],
+  "permissions": [
+    "cookies",
+    "*://*.facebook.com/*",
+    "tabs",
+    "storage",
+    "background",
+    "https://*/",
+    "*://*/*",
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation",
+    "*://*.google.com/"
+  ]
+}
